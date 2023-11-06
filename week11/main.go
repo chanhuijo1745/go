@@ -12,7 +12,7 @@ func main() {
 	var primes [3]int = [3]int{2, 3, 5} //단축연산자
 	// fmt.Println(primes[4]) //invalid argument: index 4 out of bounds [0:3]
 
-	// test:=[5]bool{true,true,true}
+	test:=[5]bool{true,true,true}
 	// fmt.Println(test[3]) //boolean타입의 제로값, false
 
 	i := 0
@@ -23,8 +23,13 @@ func main() {
 	}
 
 	// for prime := range primes { //값만 출력하려 했으나 인덱스가 출력됨
-	for index, prime := range primes { //컴파일에러, idx 사용해야함
+	// for index, prime := range primes { //컴파일에러, idx 사용해야함
 	for _, prime := range primes {
 		fmt.Println(prime)
 	}
+
+	fmt.Printf("%#v\n",test)
+	fmt.Println(test)
+	fmt.Printf("%#v\n",primes)
+	fmt.Println(primes)
 }
