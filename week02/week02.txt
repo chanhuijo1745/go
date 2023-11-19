@@ -1,0 +1,17 @@
+week02
+- linux command : ls, ls -al, pwd, cd .git, cd .., echo "blabla" >> README.md, cat README.md
+- git command
+  git init
+  git status
+  git add week01.txt
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your name"
+  git commit -m "v0"
+  git log
+  git checkout hashcode
+  git checkout -
+  git branch -M main
+  git remote add origin https://github.com/chanhuijo1745/test.git
+  git remote -v
+  git push -u origin main
+  git clone https://github.com/chanhuijo1745/test.git .
