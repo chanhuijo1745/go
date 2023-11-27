@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-	var games map[int]string
-	games=make(map[int]string)
+	games:=make(map[int]string)
 
 	games[456]="성기훈"
 	games[218]="박해수"
@@ -18,7 +17,7 @@ func main() {
 	for _,v:=range games {
 		fmt.Println(v)
 	}
-	
+
 	games[101]="장덕수" // update
 	delete(games,199) // delete
 
