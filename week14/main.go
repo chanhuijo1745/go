@@ -18,4 +18,11 @@ func main() {
 	for _,v:=range games {
 		fmt.Println(v)
 	}
+	
+	games[101]="장덕수" // update
+	delete(games,199) // delete
+
+	for k,v:=range games {
+		fmt.Println(k,v)
+	}
 }
