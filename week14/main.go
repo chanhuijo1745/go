@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	// map literal
 	games:=map[int]string{
 		456:"성기훈",
 		218:"박해수",
@@ -13,13 +14,10 @@ func main() {
 		199:"알리",
 		101:"아이오아이",
 	}
-
-	games[456]="성기훈"
-	games[218]="박해수"
-	games[067]="강새벽"
-	games[001]="오일남"
-	games[199]="알리"
-	games[101]="아이오아이"
+	//fmt.Println(games[100])
+	//name,ok:=games[100]
+	name,ok:=games[101]
+	fmt.Println(name,ok)
 
 	for _,v:=range games {
 		fmt.Println(v)
